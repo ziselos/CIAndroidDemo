@@ -15,9 +15,30 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            debuggable true
+        }
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    flavorDimensions "default"
+    productFlavors {
+        uat {
+            dimension "default"
+            applicationIdSuffix ".uat"
+            versionNameSuffix "-uat"
+
+        }
+
+        production {
+            dimension "default"
+            applicationIdSuffix ".production"
+            versionNameSuffix "-production"
+
         }
     }
 }
