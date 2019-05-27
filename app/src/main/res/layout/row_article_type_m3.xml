@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="10dp"
+              android:orientation="vertical"
+              android:layout_height="150dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+        <LinearLayout
+                android:id="@+id/titleLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="4"
+                android:layout_marginStart="20dp">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minLines="2"
+                    tools:text="Σκάνδαλο ϊμπιζα στην Αυστρία: Δεν τον εγκατέλειψα, λέει η ξανθιά Φιλίπα για τον Στράζε"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2 ώρες πριν"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    tools:text="9 σχόλια"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/art"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="50sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                tools:text="1"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_height="2dp"/>
+
+
+</LinearLayout>

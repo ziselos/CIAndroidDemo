@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="10dp"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            tools:text="Σοκάρει η δολοφονίς της 24χρονης στη Λέσβο: Φίλος της άκουσε ζωντανά τον πυροβολισμό"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2 ώρες πριν"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                tools:text="98 σχόλια"/>
+
+
+    </LinearLayout>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_height="2dp"/>
+
+
+</LinearLayout>
